@@ -2,6 +2,7 @@ import Link from 'next/link'
 import useSWR from 'swr'
 import Image from 'next/image'
 import { client } from '../util/genqlClient'
+import { auth } from "../src/auth/firebase";
 
 export default function Home() {
 
@@ -20,6 +21,9 @@ export default function Home() {
 
   return (
     <div>
+      <div style={{ position: "absolute", top: 0, right: 20 }}>
+        <button onClick={() => { auth.signOut() }}>Sign Out</button>
+      </div>
       <div className="right">
         <Link href="/create">
           <a className="btn"> Create Item &#8594;</a>

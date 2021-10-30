@@ -12,9 +12,15 @@
     "generate:genql": "nodemon --exec 'genql --schema ./graphql/schema.graphql --output ./graphql/generated/genql'  --watch 'graphql/schema.graphql'"
   },
   "dependencies": {
+    "@emotion/cache": "^11.5.0",
+    "@emotion/react": "^11.5.0",
+    "@emotion/server": "^11.4.0",
+    "@emotion/styled": "^11.3.0",
     "@genql/runtime": "2.6.0",
+    "@mui/material": "^5.0.6",
     "@prisma/client": "2.30.3",
     "apollo-server-micro": "2.25.2",
+    "firebase": "8.2.3",
     "graphql": "15.5.2",
     "graphql-scalars": "1.10.0",
     "next": "11.1.2",
